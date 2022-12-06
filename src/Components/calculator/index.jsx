@@ -5,7 +5,7 @@ import { ClearButton } from "../ClearButton";
 import { Input } from "../Input";
 import "./style.css";
 
-export function Calculater() {
+export function Calculator() {
   const [inputState, inputStateSeter] = useState({
     input: "",
     operator: ""
@@ -19,7 +19,7 @@ export function Calculater() {
     inputStateSeter({ ...inputState, input: "" });
   };
   return (
-    <div className="calculater">
+    <div className="calculator">
       <Input input={inputState.input} />
       <div className="button-container">
         <div className="numbers">
