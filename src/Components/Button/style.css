@@ -1,12 +1,26 @@
 .button {
-    background: #ffa500;
-    padding: 20px;
-    font-size: 24px;
-    font-weight: 100;
-    border: solid 1px #fff;
+  background: #ffa500;
+  width: 50px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  text-align: center;
+  font-size: 24px;
+  font-weight: 100;
+  border: solid .1px #fff;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: all ease .5;
 }
 
-.button:hover {
-    background: #ffa600c9;
-    cursor: pointer;
+.not-operator:hover {
+  background: #ffa600c9;
+}
+
+.operator {
+  background: #fff;
+  border-color: #ffa600c9;
+}
+
+.operator:hover {
+  background: rgba(17, 17, 17, 0.089);
 }

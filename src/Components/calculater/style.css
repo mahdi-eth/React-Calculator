@@ -1,15 +1,24 @@
 .calculater {
-    display: flex;
-    flex-direction: column;
+  margin-top: 100px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.button-container {
+  display: flex;
 }
 
 .numbers {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
-.numbers-row-1 , 
-.numbers-row-2 ,
-.numbers-row-3 {
-    display: flex;
+.numbers-row-1,
+.numbers-row-2,
+.numbers-row-3,
+.numbers-row-4 {
+  display: flex;
+  width: 100%;
 }

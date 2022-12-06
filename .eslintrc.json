@@ -24,6 +24,7 @@
       {
         "endOfLine": "auto",
         "semi": true,
+        "parser": "flow",
         "tabWidth": 2,
         "printWidth": 80,
         "singleQuote": false,

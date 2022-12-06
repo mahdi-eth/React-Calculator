@@ -1,0 +1,9 @@
+.calc-input {
+    width: 90%;
+    height: 50px;
+    border: none;
+    padding: 0 10px;
+    background: rgba(17, 17, 17, 0.773);
+    color: #fefefe;
+    border-radius: 4px;
+}
