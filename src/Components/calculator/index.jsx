@@ -1,5 +1,6 @@
 /* eslint-disable react/jsx-filename-extension */
 import React, { useState } from "react";
+import { evaluate } from "mathjs";
 import { Button } from "../Button";
 import { ClearButton } from "../ClearButton";
 import { Input } from "../Input";
@@ -17,6 +18,13 @@ export function Calculator() {
 
   const clear = () => {
     inputStateSeter({ ...inputState, input: "" });
+  };
+
+  const handlEqual = () => {
+    inputStateSeter({
+      ...inputState,
+      input: evaluate(inputState.input.toString())
+    });
   };
   return (
     <div className="calculator">
@@ -41,7 +49,7 @@ export function Calculator() {
           <div className="numbers-row-4">
             <Button handleClick={clickHandler}>.</Button>
             <Button handleClick={clickHandler}>0</Button>
-            <Button handleClick={clickHandler}>=</Button>
+            <Button handleClick={handlEqual}>=</Button>
           </div>
         </div>
         <div className="opearators">
@@ -52,7 +60,7 @@ export function Calculator() {
             <Button handleClick={clickHandler}>-</Button>
           </div>
           <div className="numbers-row-3">
-            <Button handleClick={clickHandler}>X</Button>
+            <Button handleClick={clickHandler}>*</Button>
           </div>
           <div className="numbers-row-4">
             <Button handleClick={clickHandler}>/</Button>
