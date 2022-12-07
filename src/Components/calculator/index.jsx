@@ -8,21 +8,19 @@ import "./style.css";
 
 export function Calculator() {
   const [inputState, inputStateSeter] = useState({
-    input: "",
-    operator: ""
+    input: ""
   });
 
   const clickHandler = (i) => {
-    inputStateSeter({ ...inputState, input: inputState.input + i });
+    inputStateSeter({ input: inputState.input + i });
   };
 
   const clear = () => {
-    inputStateSeter({ ...inputState, input: "" });
+    inputStateSeter({ input: "" });
   };
 
   const handlEqual = () => {
     inputStateSeter({
-      ...inputState,
       input: evaluate(inputState.input.toString())
     });
   };
